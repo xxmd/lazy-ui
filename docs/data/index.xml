@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data on LazyUI</title>
-    <link>https://xxmd.github.io/prefix/data/</link>
+    <link>https://xxmd.github.io/lazy-ui/data/</link>
     <description>Recent content in Data on LazyUI</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xxmd.github.io/prefix/data/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xxmd.github.io/lazy-ui/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Table 数据表格</title>
-      <link>https://xxmd.github.io/prefix/data/table/</link>
+      <link>https://xxmd.github.io/lazy-ui/data/table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xxmd.github.io/prefix/data/table/</guid>
+      <guid>https://xxmd.github.io/lazy-ui/data/table/</guid>
       <description>基础表格 点击字段排序有惊喜
 &amp;lt;div class=&amp;#34;lazy-table&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;template&amp;gt; new LazyUI.Table(&amp;#39;.lazy-table&amp;#39;, { url: &amp;#39;/getTableData&amp;#39;, cols: [ { field: &amp;#39;name&amp;#39;, title: &amp;#39;姓名&amp;#39; }, { field: &amp;#39;age&amp;#39;, title: &amp;#39;年龄&amp;#39;, sort: true, width: 80 }, { field: &amp;#39;sex&amp;#39;, title: &amp;#39;性别&amp;#39;, formatter: ({ val }) =&amp;gt; val === &amp;#39;male&amp;#39; ? &amp;#39;男&amp;#39; : &amp;#39;女&amp;#39; }, { field: &amp;#39;email&amp;#39;, title: &amp;#39;邮箱&amp;#39; }, { field: &amp;#39;job.jobName&amp;#39;, title: &amp;#39;职位名称&amp;#39; }, { field: &amp;#39;job.expectedSalary&amp;#39;, title: &amp;#39;期望薪资(元)&amp;#39;, align: &amp;#39;right&amp;#39;, sort: true }, { title: &amp;#39;操作&amp;#39;, formatter: () =&amp;gt; `&amp;lt;div class=&amp;#34;operate-btns&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;row-edit&amp;#34;&amp;gt;编辑&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;row-delete&amp;#34; onclick=&amp;#34;alert(&amp;#39;确认删除吗?</description>
     </item>
