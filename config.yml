@@ -1,5 +1,5 @@
 title: "LazyUI"
-url: "https://xxmd.github.io"
+baseURL: "https://xxmd.github.io/lazy-ui"
 publishDir: "docs"
 
 markup:
