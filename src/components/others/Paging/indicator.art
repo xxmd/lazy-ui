@@ -1,0 +1,15 @@
+<ul class="paging-indicator">
+    <i class="indicator-item iconfont icon-arrow-left {{ curPage === 1 ? 'indicator-item-disabled' : '' }}"></i>
+    {{ each indicatorNums num }}
+        {{ if num === '...' }}
+            <li class="indicator-item indicator-item-disabled">{{ num }}</li>
+        {{ /if }}
+        {{ if num === curPage }}
+            <li class="indicator-item indicator-item-selected">{{ num }}</li>
+        {{ /if }}
+        {{ if num !== '...' && num !== curPage }}
+            <li class="indicator-item">{{ num }}</li>
+        {{ /if }}
+    {{ /each }}
+    <i class="indicator-item iconfont icon-arrow-right {{ curPage === indicatorNums[indicatorNums.length - 1] ? 'indicator-item-disabled' : '' }}"></i>
+</ul>

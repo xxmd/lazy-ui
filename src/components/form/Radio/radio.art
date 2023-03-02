@@ -1,0 +1,9 @@
+<div class="radio-group">
+    {{ each options option }}
+      <div class="radio-item">
+        <input class="hidden-top-layer-input" type="radio" name="{{ name }}" value="{{ option.value }}">
+        <span class="item-indicator"></span>
+        <span class="item-text">{{ option.label }}</span>
+      </div>
+    {{ /each }}
+</div>

@@ -1,0 +1,18 @@
+<script src="/js/vendor/jquery.slim.min.js"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/dist/js/lazy-ui.min.js"></script>
+
+
+<!--{{ if eq .Page.Layout "docs" -}}-->
+<!--<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>-->
+<!--{{- end }}-->
+
+<!-- 导入 site/assets/js 目录下的所有js文件 -->
+{{- $vendor := resources.Match "js/vendor/*.js" -}}
+{{- $js := resources.Match "js/*.js" -}}
+{{- $targetDocsJSPath := "/docs/assets/js/docs.js" -}}
+<!--因为$js $vendor是数组，所以需要append，如果是单文件就可以用slice-->
+<!--https://gohugo.io/hugo-pipes/bundling/-->
+{{- $docsJs := append $js $vendor | resources.Concat $targetDocsJSPath -}}
+
+<script src="{{ $docsJs.Permalink | relURL }}"></script>

@@ -1,0 +1,11 @@
+<div class="lazy-paging">
+    {{include './indicator.art' $data}}
+    <div class="paging-info">
+        <span>到第</span>
+        <input class="jump-input lazy-block-input" value="{{ curPage }}"></input>
+        <span>页</span>
+        <button class="lazy-button lazy-button-primary jump-btn">确定</button>
+        <span class="total-tips">共 {{ options.total }} 条</span>
+        <div class="select-box"></div>
+    </div>
+</div>

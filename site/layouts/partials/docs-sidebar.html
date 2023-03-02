@@ -1,0 +1,36 @@
+<div class="collapse d-md-block row" id="bd-docs-nav">
+  <nav class="bd-links" aria-label="Main navigation">
+    {{- $url := split .Permalink "/" -}}
+    {{- $page_slug := index $url (sub (len $url) 2) -}}
+
+    {{- range $group := .Site.Data.sidebar -}}
+      {{- $link := $group.slug -}}
+      {{- $link_slug := $link | urlize -}}
+
+      {{- if $group.pages -}}
+        {{- $link = index $group.pages 0 -}}
+        {{- $link_slug = $link.slug | urlize -}}
+      {{- end -}}
+
+      {{- $group_slug := $group.slug | urlize -}}
+      {{- $is_active_group := eq $.Page.Params.group $group_slug }}
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/{{ $group_slug }}/{{ if $group.pages }}{{ $link_slug }}/{{ end }}">
+          {{ $group.title }}
+        </a>
+
+        <ul class="nav bd-sidenav">
+          {{- range $doc := $group.pages -}}
+            {{- $doc_slug := $doc.slug | urlize }}
+            <li{{ if and $is_active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
+              <a href="/{{ $group_slug }}/{{ $doc_slug }}/">
+                {{- $doc.title -}}
+              </a>
+            </li>
+          {{- end }}
+        </ul>
+      </div>
+    {{- end }}
+  </nav>
+</div>

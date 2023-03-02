@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3868697 */
+  src: url('//at.alicdn.com/t/c/font_3868697_3ahki32xdea.ttf?t=1677678222387') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e69e";
+}
+
+.icon-loading:before {
+  content: "\e891";
+}
+
+.icon-download:before {
+  content: "\e623";
+}
+
+.icon-preview:before {
+  content: "\ec13";
+}
+
+.icon-github-fill:before {
+  content: "\e885";
+}
+
+.icon-npm:before {
+  content: "\e610";
+}
+
+.icon-cloud-fill:before {
+  content: "\e869";
+}
+
+.icon-check-mark:before {
+  content: "\e6b4";
+}
+
+.icon-delete:before {
+  content: "\e67e";
+}
+
+.icon-filter:before {
+  content: "\e7c7";
+}
+
+.icon-add:before {
+  content: "\e6df";
+}
+
+.icon-arrow-right:before {
+  content: "\e660";
+}
+
+.icon-arrow-left:before {
+  content: "\e661";
+}
+
+.icon-solid-arrow-up:before {
+  content: "\e600";
+}
+
+.icon-solid-arrow-down:before {
+  content: "\e65f";
+}
+
+.icon-arrow-down:before {
+  content: "\e65e";
+}

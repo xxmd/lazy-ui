@@ -1,0 +1,22 @@
+<div class="lazy-select">
+  <div class="select-result">
+      <input type="text" readonly placeholder="{{ placeholder }}" value="{{ selectedLabel }}"/>
+      <i class="iconfont icon-arrow-down"></i>
+  </div>
+  <div class="white-space"></div>
+  <ul class="select-options">
+      {{ each selectOptions option }}
+        <li class="select-option">
+          <input
+            class="hidden-top-layer-input"
+            type="radio"
+            name="{{ name }}"
+            data-label="{{ option.label }}"
+            value="{{ option.value }}"
+            {{ option.value === options.selectedValue ? 'checked' : '' }}
+          >
+          <span>{{ option.label }}</span>
+        </li>
+      {{ /each }}
+  </ul>
+</div>

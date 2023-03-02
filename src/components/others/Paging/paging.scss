@@ -1,0 +1,55 @@
+$paging-height: 30px;
+
+.lazy-paging {
+  width: 100%;
+  height: $paging-height;
+  display: flex;
+  gap: 10px;
+  .paging-indicator {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+    .indicator-item {
+      cursor: pointer;
+      user-select: none;
+      width: $paging-height;
+      height: $paging-height;
+      line-height: $paging-height;
+      text-align: center;
+      background-color: #f4f4f5;
+      border-radius: 2px;
+      &:hover {
+        color: #409eff;
+      }
+    }
+    .indicator-item-selected {
+      color: #fff !important;
+      background-color: #409eff;
+    }
+    .indicator-item-disabled {
+      cursor: not-allowed;
+      color: #ccc !important;
+    }
+  }
+  .paging-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .jump-input {
+      width: 50px;
+      height: 100%;
+    }
+    .lazy-button {
+      padding: 0 10px;
+      height: $paging-height;
+      line-height: $paging-height;
+    }
+    .lazy-select {
+      width: 100px;
+      height: $paging-height;
+      input {
+        height: $paging-height;
+      }
+    }
+  }
+}

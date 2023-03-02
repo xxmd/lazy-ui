@@ -1,0 +1,38 @@
+<div>
+    <div class="table-operator">
+        <div>
+            <button class="lazy-button lazy-button-primary">
+              <i class="iconfont icon-add"></i> 新增
+            </button>
+            <button class="lazy-button lazy-button-danger batch-delete-btn lazy-button-disabled">
+              <i class="iconfont icon-delete"></i> 批量删除
+            </button>
+        </div>
+    </div>
+
+    <table class="lazy-table">
+        <thead>
+            <tr>
+               <th style="text-align: center"><input type="checkbox" class="check-all-input"></th>
+               <th>序号</th>
+                {{ each options.cols col }}
+                    <th class="{{ col.sort === true ? 'sortable-th' : '' }}" style="{{ col.align ? 'text-align: ' + col.align + ';' : '' }}{{ col.width ? 'width: ' + col.width + 'px' : '' }}" data-field="{{ col.field }}">
+                    <span>{{ col.title }}</span>
+                      {{ if col.sort }}
+                        <span class="sort-arrow">
+                            <i class="iconfont icon-solid-arrow-up"></i>
+                            <i class="iconfont icon-solid-arrow-down"></i>
+                        </span>
+                      {{ /if }}
+                    </th>
+                {{ /each }}
+            </tr>
+        </thead>
+
+        {{include './tbody.art' $data}}
+    </table>
+
+    <div class="table-paging"></div>
+</div>
+
+

@@ -1,0 +1,46 @@
+.lazy-dialog {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  scroll-behavior: auto;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lazy-dialog-inner {
+  width: 20%;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  background-color: #fff;
+  position: relative;
+  margin: 40vh auto 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  padding: 20px;
+  opacity: 1;
+}
+
+.dialog-header {
+  padding-bottom: 20px;
+  i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #909399;
+    cursor: pointer;
+  }
+}
+
+.dialog-footer {
+  text-align: right;
+  button {
+    margin-left: 7px;
+  }
+  button:first-child {
+    margin-right: 0;
+  }
+}

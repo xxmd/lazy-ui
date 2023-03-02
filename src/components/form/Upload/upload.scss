@@ -1,0 +1,77 @@
+.lazy-upload {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+$file-item-width: 150px;
+
+.file-item {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 6px;
+  width: $file-item-width;
+  height: $file-item-width;
+  cursor: pointer;
+  line-height: $file-item-width;
+  text-align: center;
+  border: 1px solid #c0ccda;
+  background-color: #fff;
+}
+
+.upload-indicator {
+  background-color: #fbfdff;
+  border: 1px dashed #c0ccda;
+  .icon-add {
+    font-size: 40px;
+    color: #8c939d;
+  }
+  &:hover {
+    border-color: #409eff;
+    color: #409eff;
+  }
+}
+
+.file-item > label {
+  position: absolute;
+  right: -15px;
+  top: -6px;
+  width: 40px;
+  height: 24px;
+  background: #13ce66;
+  transform: rotate(45deg);
+  line-height: normal;
+  text-align: center;
+  box-shadow: 0 0 1pc 1px rgb(0 0 0 / 20%);
+  i {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    transform: rotate(-45deg) translate(-20%, 20%);
+  }
+}
+
+.file-item > img {
+  width: 90%;
+  height: 90%;
+}
+
+.file-item > .operate-btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  color: transparent;
+  i {
+    font-size: 20px;
+  }
+  &:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+  }
+}

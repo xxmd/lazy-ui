@@ -1,0 +1,21 @@
+<tbody>
+    {{ each rows row index }}
+      <tr id="{{ row.id }}">
+          <td style="text-align: center">
+            <input type="checkbox" {{ row[checkedSymbol] ? 'checked' : '' }} data-index={{ index }}>
+          </td>
+          <td>{{ index + 1 }}</td>
+        {{ each options.cols col optionIndex }}
+            {{ set fieldValue = deepGet(row, col.field) }}
+            {{ if col.formatter }}
+                {{ set formattedValue = col.formatter({ rows, row, field: col.field, value: fieldValue, index: index })}}
+            {{ else if !col.formatter }}
+                {{ set formattedValue = fieldValue }}
+            {{ /if }}
+            <td style="{{ col.align ? 'text-align: ' + col.align : '' }}">
+              {{@ formattedValue}}
+            </td>
+        {{ /each }}
+      </tr>
+    {{/each}}
+</tbody>

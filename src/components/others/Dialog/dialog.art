@@ -1,0 +1,15 @@
+<div class="lazy-dialog">
+    <div class="lazy-dialog-inner">
+      <div class="dialog-header">
+        <span class="dialog-title">{{ options.dialogTitle || '标题' }}</span>
+        <i class="iconfont icon-close"></i>
+      </div>
+      <div class="dialog-body">
+         {{@ options.dialogBody}}
+      </div>
+      <div class="dialog-footer">
+        <button class="lazy-button">取消</button>
+        <button class="lazy-button lazy-button-primary">确认</button>
+      </div>
+    </div>
+</div>

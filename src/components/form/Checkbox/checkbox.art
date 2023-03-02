@@ -1,0 +1,9 @@
+<div class="checkbox-group">
+    {{ each options option }}
+      <div class="checkbox-item">
+        <input class="hidden-top-layer-input" type="checkbox" name="{{ name }}" value="{{ option.value }}">
+        <span class="item-indicator"></span>
+        <span class="item-text">{{ option.label }}</span>
+      </div>
+    {{ /each }}
+</div>

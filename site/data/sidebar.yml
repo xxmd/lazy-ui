@@ -1,0 +1,33 @@
+- title: 快速入门
+  slug: start
+  pages:
+    - title: 安装
+      slug: install
+    - title: 网站生成
+      slug: docs-site-generate
+
+- title: 基础组件
+  slug: basic
+  pages:
+    - title: Layout 布局
+      slug: layout
+
+- title: 表单相关
+  slug: form
+  pages:
+    - title: Form 表单
+      slug: form
+    - title: Upload 文件上传
+      slug: upload
+
+- title: 数据展示
+  slug: data
+  pages:
+    - title: Table 表格
+      slug: table
+
+- title: 其他
+  slug: others
+  pages:
+    - title: Dialog 对话框
+      slug: dialog

@@ -1,0 +1,44 @@
+// 混入
+@import "../../../scss/mixins";
+
+.lazy-row {
+  // 清除浮动
+  @include clearfix();
+  display: block;
+}
+
+// 栅格总列数
+$grid-cols: 12;
+
+// 百分比计算函数
+@function compute-percent($n) {
+  @return $n / $grid-cols * 100%;
+}
+
+// 对应列数占据的宽度
+@for $i from 1 through $grid-cols {
+  .lazy-col-#{$i} {
+    float: left;
+    width: compute-percent($i);
+  }
+}
+
+// 列偏移
+@for $i from 1 through $grid-cols {
+  .lazy-col-offset-#{$i} {
+    margin-left: compute-percent($i);
+  }
+}
+
+// 最大列间距20px
+$max-col-space: 20;
+
+// 列间距
+@for $i from 1 through $max-col-space {
+  .lazy-col-space-#{$i} {
+    margin: 0 1px * $i / 2;
+    [class^="lazy-col-"] {
+      padding: 0 1px * $i / 2;
+    }
+  }
+}

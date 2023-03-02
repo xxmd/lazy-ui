@@ -1,0 +1,80 @@
+.lazy-table {
+  width: 100%;
+  border-collapse: collapse;
+  th, td {
+    border: 1px solid #ebeef5;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: #909399;
+    text-align: left;
+    user-select: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .iconfont {
+    color: #b2b2b2;
+  }
+  .operate-btns {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.sortable-th {
+  cursor: pointer;
+}
+
+.sort-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  .iconfont {
+    position: absolute;
+    line-height: 1em;
+    font-size: 14px;
+    left: 0;
+  }
+  .icon-solid-arrow-up {
+    bottom: 20%;
+  }
+  .icon-solid-arrow-down {
+    top: 60%;
+  }
+}
+
+.active-arrow {
+  color: #409eff !important;
+}
+
+.row-edit {
+  color: #409eff;
+}
+
+.row-delete {
+  color: #f56c6c;
+}
+
+.table-paging {
+  border: 1px solid var(--table-border-color);
+  padding: 10px 0;
+  border-top: none;
+}
+
+.table-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+}
+
+.table-operator {
+  margin-bottom: 10px;
+}
+
+.lazy-paging {
+  margin-top: 10px;
+}

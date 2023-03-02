@@ -1,0 +1,34 @@
+:root {
+  --default-line-height: 40px;
+  --danger: #f56c6c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.hidden-top-layer-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+input[type="file"] {
+  font-size: 0;
+}
+
+.icon-success {
+
+}

@@ -1,0 +1,25 @@
+title: "LazyUI"
+baseURL: "https://xxmd.github.io/lazy-ui"
+publishDir: "docs"
+
+markup:
+  goldmark:
+  # 允许外部 CSS 修饰 highlight 高亮
+  highlight:
+    noClasses: false
+
+# 因为site目录在项目内部，所以需要挂载映射
+module:
+  mounts:
+    - source: dist
+      target: static/dist
+    - source: site/assets
+      target: assets
+    - source: site/content
+      target: content
+    - source: site/data
+      target: data
+    - source: site/layouts
+      target: layouts
+    - source: site/static
+      target: static

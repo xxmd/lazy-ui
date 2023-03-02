@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/img/favicon.ico" sizes="16x16" type="image/png">
+<link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="/css/vendor/docs.css" rel="stylesheet">
+<link href="/dist/css/lazy-ui.min.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">首页</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/start/install/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">文档</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="" target="_blank" rel="noopener" aria-label="GitHub">
+          <i style="font-size: 18px" class="iconfont icon-github-fill"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-md-3 col-xl-2 bd-sidebar">
+          <div class="collapse d-md-block row" id="bd-docs-nav">
+  <nav class="bd-links" aria-label="Main navigation">
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/start/install/">
+          快速入门
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/start/install/">安装</a>
+            </li>
+            <li class="active bd-sidenav-active">
+              <a href="/start/docs-site-generate/">网站生成</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/basic/layout/">
+          基础组件
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/basic/layout/">Layout 布局</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/form/form/">
+          表单相关
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/form/form/">Form 表单</a>
+            </li>
+            <li>
+              <a href="/form/upload/">Upload 文件上传</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/data/table/">
+          数据展示
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/data/table/">Table 表格</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/others/dialog/">
+          其他
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/others/dialog/">Dialog 对话框</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+        </div>
+
+        
+          <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo">Hugo</a></li>
+    <li><a href="#网站生成步骤">网站生成步骤</a></li>
+  </ul>
+</nav>
+          </nav>
+        
+
+        <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">网站生成</h1>
+          <p class="bd-lead">使用Hugo生成文档网站</p>
+          <h2 id="hugo">Hugo</h2>
+<p><a href="https://gohugo.io/">Hugo</a> 是由Go语言实现的静态网站生成器。</p>
+<h2 id="网站生成步骤">网站生成步骤</h2>
+<ol>
+<li>
+<p>使用 <code>hugo new site site-name</code> 命令生成一个网站。</p>
+</li>
+<li>
+<p>在 <code>layouts</code> 目录中定义网站布局 ( 例如 navbar，sidebar，content，footer 这种经典布局 ) 。</p>
+</li>
+<li>
+<p>在 <code>content</code> 目录中新建网站页面，文件格式为 .md ( markdown文件 )。</p>
+</li>
+<li>
+<p>使用 <code>hugo serve</code> 命令运行该网站</p>
+</li>
+<li>
+<p>项目目录结构如下</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">site-name/
+</span></span><span class="line"><span class="cl">├── archetypes/
+</span></span><span class="line"><span class="cl">│   └── default.md
+</span></span><span class="line"><span class="cl">├── assets/
+</span></span><span class="line"><span class="cl">├── content/    // 网站页面
+</span></span><span class="line"><span class="cl">├── data/       // 页面数据
+</span></span><span class="line"><span class="cl">├── layouts/    // 网站布局
+</span></span><span class="line"><span class="cl">├── public/
+</span></span><span class="line"><span class="cl">├── static/     // 可通过url直接访问的静态资源
+</span></span><span class="line"><span class="cl">├── themes/     // 网站主题
+</span></span><span class="line"><span class="cl">└── config.toml // Hugo 配置文件
+</span></span></code></pre></div>
+        </main>
+      </div>
+    </div>
+
+    <script src="/js/vendor/jquery.slim.min.js"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/dist/js/lazy-ui.min.js"></script>
+
+
+
+
+
+
+
+<script src="/lazy-ui/docs/assets/js/docs.js"></script>
+
+  </body>
+</html>

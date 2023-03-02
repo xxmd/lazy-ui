@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/img/favicon.ico" sizes="16x16" type="image/png">
+<link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="/css/vendor/docs.css" rel="stylesheet">
+<link href="/dist/css/lazy-ui.min.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">首页</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/start/install/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">文档</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="" target="_blank" rel="noopener" aria-label="GitHub">
+          <i style="font-size: 18px" class="iconfont icon-github-fill"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-md-3 col-xl-2 bd-sidebar">
+          <div class="collapse d-md-block row" id="bd-docs-nav">
+  <nav class="bd-links" aria-label="Main navigation">
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/start/install/">
+          快速入门
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/start/install/">安装</a>
+            </li>
+            <li>
+              <a href="/start/docs-site-generate/">网站生成</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/basic/layout/">
+          基础组件
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/basic/layout/">Layout 布局</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/form/form/">
+          表单相关
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/form/form/">Form 表单</a>
+            </li>
+            <li>
+              <a href="/form/upload/">Upload 文件上传</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/data/table/">
+          数据展示
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li class="active bd-sidenav-active">
+              <a href="/data/table/">Table 表格</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/others/dialog/">
+          其他
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/others/dialog/">Dialog 对话框</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+        </div>
+
+        
+          <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基础表格">基础表格</a></li>
+  </ul>
+</nav>
+          </nav>
+        
+
+        <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Table 数据表格</h1>
+          <p class="bd-lead">用于展示多条结构类似的数据，可对数据进行排序、筛选、对比或其他自定义操作。</p>
+          <h2 id="基础表格">基础表格</h2>
+<p>点击字段排序有惊喜</p>
+<div class="bd-example">
+  <div class="lazy-table"></div>
+
+  
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;lazy-table&#34;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">template</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">new</span> <span class="nx">LazyUI</span><span class="p">.</span><span class="nx">Table</span><span class="p">(</span><span class="s1">&#39;.lazy-table&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/getTableData&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">cols</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;姓名&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;年龄&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">sort</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">width</span><span class="o">:</span> <span class="mi">80</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;性别&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">formatter</span><span class="o">:</span> <span class="p">({</span> <span class="nx">val</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="nx">val</span> <span class="o">===</span> <span class="s1">&#39;male&#39;</span> <span class="o">?</span> <span class="s1">&#39;男&#39;</span> <span class="o">:</span> <span class="s1">&#39;女&#39;</span>    
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;email&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;邮箱&#39;</span>   
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;job.jobName&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;职位名称&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">field</span><span class="o">:</span> <span class="s1">&#39;job.expectedSalary&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;期望薪资(元)&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">sort</span><span class="o">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;操作&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">formatter</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="sb">`&lt;div class=&#34;operate-btns&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">                                &lt;span class=&#34;row-edit&#34;&gt;编辑&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">                                &lt;span class=&#34;row-delete&#34; onclick=&#34;alert(&#39;确认删除吗?&#39;)&#34;&gt;删除&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">                              &lt;/div&gt;`</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="err">/template&gt;</span>
+</span></span></code></pre></div><script src="/dist/js/lazy-ui.min.js"></script>
+<script>
+  
+  <div class="lazy-table"></div>
+
+  
+    new LazyUI.Table('.lazy-table', {
+      url: '/getTableData',
+      cols: [
+        {
+            field: 'name',
+            title: '姓名'
+        },
+        {
+            field: 'age',
+            title: '年龄',
+            sort: true,
+            width: 80
+        },
+        {
+            field: 'sex',
+            title: '性别',
+            formatter: ({ val }) => val === 'male' ? '男' : '女'    
+        },
+        {
+            field: 'email',
+            title: '邮箱'   
+        },
+        {
+            field: 'job.jobName',
+            title: '职位名称'
+        },
+        {
+            field: 'job.expectedSalary',
+            title: '期望薪资(元)',
+            align: 'right',
+            sort: true
+        },
+        {
+            title: '操作',
+            formatter: () => `<div class="operate-btns">
+                                <span class="row-edit">编辑</span>
+                                <span class="row-delete" onclick="alert('确认删除吗?')">删除</span>
+                              </div>`
+        }
+      ]
+    })
+  
+
+</script>
+
+
+        </main>
+      </div>
+    </div>
+
+    <script src="/js/vendor/jquery.slim.min.js"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/dist/js/lazy-ui.min.js"></script>
+
+
+
+
+
+
+
+<script src="/lazy-ui/docs/assets/js/docs.js"></script>
+
+  </body>
+</html>
