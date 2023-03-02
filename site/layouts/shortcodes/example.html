@@ -1,8 +1,8 @@
 {{- $id := .Get "id" -}}
 {{- $class := .Get "class" -}}
 {{- $input := .Inner -}}
-{{- $html := replaceRE `<template[^>]*?>(?:.|\n)*?<\/template>` "" .Inner -}}
-{{- $template := replace $input (trim $html "\n") "" -}}
+{{- $html := replaceRE `<template>(?:.|\n)*?<\/template>` "" .Inner -}}
+{{- $template := index (findRE `(?s)<template.*?>.*?</template>` .Inner) 0 -}}
 {{- $js := replaceRE `</?template>` "" $template -}}
 
 <div{{ with $id }} id="{{ . }}"{{ end }} class="bd-example{{ with $class }} {{ . }}{{ end }}">
@@ -12,6 +12,4 @@
 {{- highlight (trim .Inner "\n") "js" -}}
 
 <script src="/dist/js/lazy-ui.min.js"></script>
-<script>
-  {{ safeJS $js }}
-</script>
+<script>{{ safeJS $js }}</script>

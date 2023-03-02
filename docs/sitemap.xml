@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/basic/</loc>
+    <loc>https://xxmd.github.io/prefix/basic/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://xxmd.github.io/prefix/categories/</loc>
   </url><url>
-    <loc>/data/</loc>
+    <loc>https://xxmd.github.io/prefix/data/</loc>
   </url><url>
-    <loc>/others/dialog/</loc>
+    <loc>https://xxmd.github.io/prefix/others/dialog/</loc>
   </url><url>
-    <loc>/form/form/</loc>
+    <loc>https://xxmd.github.io/prefix/form/form/</loc>
   </url><url>
-    <loc>/form/</loc>
+    <loc>https://xxmd.github.io/prefix/form/</loc>
   </url><url>
-    <loc>/basic/layout/</loc>
+    <loc>https://xxmd.github.io/prefix/basic/layout/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>https://xxmd.github.io/prefix/</loc>
   </url><url>
-    <loc>/others/</loc>
+    <loc>https://xxmd.github.io/prefix/others/</loc>
   </url><url>
-    <loc>/start/</loc>
+    <loc>https://xxmd.github.io/prefix/start/</loc>
   </url><url>
-    <loc>/data/table/</loc>
+    <loc>https://xxmd.github.io/prefix/data/table/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://xxmd.github.io/prefix/tags/</loc>
   </url><url>
-    <loc>/form/upload/</loc>
+    <loc>https://xxmd.github.io/prefix/form/upload/</loc>
   </url><url>
-    <loc>/start/install/</loc>
+    <loc>https://xxmd.github.io/prefix/start/install/</loc>
   </url><url>
-    <loc>/start/docs-site-generate/</loc>
+    <loc>https://xxmd.github.io/prefix/start/docs-site-generate/</loc>
   </url>
 </urlset>
