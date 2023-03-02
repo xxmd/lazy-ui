@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xxmd.github.io/lazy-ui/basic/</loc>
+    <loc>/basic/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/data/</loc>
+    <loc>/data/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/others/dialog/</loc>
+    <loc>/others/dialog/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/form/form/</loc>
+    <loc>/form/form/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/form/</loc>
+    <loc>/form/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/basic/layout/</loc>
+    <loc>/basic/layout/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/others/</loc>
+    <loc>/others/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/start/</loc>
+    <loc>/start/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/data/table/</loc>
+    <loc>/data/table/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/tags/</loc>
+    <loc>/tags/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/form/upload/</loc>
+    <loc>/form/upload/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/start/install/</loc>
+    <loc>/start/install/</loc>
   </url><url>
-    <loc>https://xxmd.github.io/lazy-ui/start/docs-site-generate/</loc>
+    <loc>/start/docs-site-generate/</loc>
   </url>
 </urlset>

@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Starts on LazyUI</title>
-    <link>https://xxmd.github.io/lazy-ui/start/</link>
+    <link>/start/</link>
     <description>Recent content in Starts on LazyUI</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xxmd.github.io/lazy-ui/start/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/start/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装</title>
-      <link>https://xxmd.github.io/lazy-ui/start/install/</link>
+      <link>/start/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xxmd.github.io/lazy-ui/start/install/</guid>
+      <guid>/start/install/</guid>
       <description>npm 安装 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 npm i lazy-ui -S CDN 目前可以通过 unpkg.com/lazy-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 &amp;lt;!-- 引入样式 --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://unpkg.com/lazy-ui/dist/css/lazy-ui.min.css&amp;#34;&amp;gt; &amp;lt;!-- 引入组件库 --&amp;gt; &amp;lt;script src=&amp;#34;https://unpkg.com/lazy-ui/dist/js/lazy-ui.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; Hello world 通过 CDN 的方式我们可以很容易地使用 LazyUI 写出一个 Hello world 页面。在线演示
@@ -19,10 +19,10 @@ npm i lazy-ui -S CDN 目前可以通过 unpkg.com/lazy-ui 获取到最新版本�
     
     <item>
       <title>网站生成</title>
-      <link>https://xxmd.github.io/lazy-ui/start/docs-site-generate/</link>
+      <link>/start/docs-site-generate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xxmd.github.io/lazy-ui/start/docs-site-generate/</guid>
+      <guid>/start/docs-site-generate/</guid>
       <description>Hugo Hugo 是由Go语言实现的静态网站生成器。
 网站生成步骤 使用 hugo new site site-name 命令生成一个网站。
 在 layouts 目录中定义网站布局 ( 例如 navbar，sidebar，content，footer 这种经典布局 ) 。
