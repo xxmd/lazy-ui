@@ -15,10 +15,15 @@ jobs:
         with:
           node-version: '16'
 
-      - run: npm config set proxy null
-      - run: npm cache verify
-      - run: npm config set registry https://registry.npm.taobao.org
-      - run: npm install
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
       - run: npm run build
 
       - uses: peaceiris/actions-hugo@v2
@@ -31,3 +36,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./docs
+          force_orphan: true
