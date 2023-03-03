@@ -4,7 +4,7 @@ import FormComponent from "../form-component";
 
 class Select extends FormComponent {
   constructor(element, options) {
-    options.errorClassName = 'lazy-select-error'
+    options.errorClassName = 'lazy-select-required'
     super(element, options)
     this.init()
     this.render()
