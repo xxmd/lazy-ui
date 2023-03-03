@@ -23,7 +23,7 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - run rm -rf docs
+      - run: rm -rf docs
       - run: hugo --cleanDestinationDir --noBuildLock --minify
 
       - uses: peaceiris/actions-gh-pages@v3
