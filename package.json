@@ -16,7 +16,7 @@
     "build": "npm-run-all --parallel build-*",
     "build-css": "gulp",
     "build-js": "webpack --watch",
-    "build-site": "hugo",
+    "docs-gene": "hugo",
     "docs-serve": "hugo server --port 9001"
   },
   "keywords": [
