@@ -1,86 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>LazyUI</title>
-    <link>https://xxmd.github.io/lazy-ui/</link>
-    <description>Recent content on LazyUI</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xxmd.github.io/lazy-ui/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dialog 对话框</title>
-      <link>https://xxmd.github.io/lazy-ui/others/dialog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/others/dialog/</guid>
-      <description>基本用法 使用 LazyUI.Dialog() 弹出一个对话框
-打开对话框&amp;lt;button class=&amp;#34;lazy-button lazy-button-primary&amp;#34; onclick=&amp;#34;openDialog()&amp;#34;&amp;gt;打开对话框&amp;lt;/button&amp;gt; &amp;lt;template&amp;gt; const openDialog = function() { new LazyUI.Dialog({ dialogBody: `&amp;lt;span&amp;gt;这是一段消息&amp;lt;/span&amp;gt;` }) } &amp;lt;/template&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>Form 表单</title>
-      <link>https://xxmd.github.io/lazy-ui/form/form/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/form/form/</guid>
-      <description>典型表单 包括各种表单项，比如输入框、选择器、开关、单选框、多选框等。
-活动名称活动区域北京上海广州深圳即时配送活动性质特殊资源备注确认重置&amp;lt;form style=&amp;#34;width: 40%&amp;#34; class=&amp;#34;lazy-form&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;活动名称&amp;lt;/label&amp;gt; &amp;lt;input autocomplete=&amp;#34;off&amp;#34; data-required=&amp;#34;true&amp;#34; data-tips=&amp;#34;请输入活动名称&amp;#34; name=&amp;#34;name&amp;#34; type=&amp;#34;text&amp;#34; placeholder=&amp;#34;请输入活动名称&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;活动区域&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;city&amp;#34; data-required=&amp;#34;true&amp;#34; data-tips=&amp;#34;请选择活动区域&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;beijing&amp;#34;&amp;gt;北京&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;shanghai&amp;#34;&amp;gt;上海&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;guangzhou&amp;#34;&amp;gt;广州&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;shenzhen&amp;#34;&amp;gt;深圳&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;即时配送&amp;lt;/label&amp;gt; &amp;lt;input name=&amp;#34;delivery&amp;#34; data-type=&amp;#34;switch&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;活动性质&amp;lt;/label&amp;gt; &amp;lt;div class=&amp;#34;checkbox-group&amp;#34; data-name=&amp;#34;nature&amp;#34; data-required=&amp;#34;true&amp;#34; data-tips=&amp;#34;请选择活动性质&amp;#34;&amp;gt; &amp;lt;input value=&amp;#34;online&amp;#34; data-label=&amp;#34;美食/餐厅线上活动&amp;#34;&amp;gt; &amp;lt;input value=&amp;#34;local&amp;#34; data-label=&amp;#34;地推活动&amp;#34;&amp;gt; &amp;lt;input value=&amp;#34;offline&amp;#34; data-label=&amp;#34;线下主题活动&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;特殊资源&amp;lt;/label&amp;gt; &amp;lt;div class=&amp;#34;radio-group&amp;#34; data-name=&amp;#34;nature&amp;#34; data-required=&amp;#34;true&amp;#34; data-tips=&amp;#34;请选择特殊资源&amp;#34;&amp;gt; &amp;lt;input value=&amp;#34;brand&amp;#34; data-label=&amp;#34;品牌商赞助&amp;#34;&amp;gt; &amp;lt;input value=&amp;#34;free&amp;#34; data-label=&amp;#34;场地免费&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-item&amp;#34;&amp;gt; &amp;lt;label&amp;gt;备注&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;remarks&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;btns&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;lazy-button lazy-button-primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;确认&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;lazy-button&amp;#34; type=&amp;#34;reset&amp;#34;&amp;gt;重置&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;template&amp;gt; new LazyUI.</description>
-    </item>
-    
-    <item>
-      <title>Layout 布局</title>
-      <link>https://xxmd.github.io/lazy-ui/basic/layout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/basic/layout/</guid>
-      <description>栅格布局原理 定义容器大小，平分 12 份。再调整内外边距，最后结合媒体查询，就制作出了强大的响应式网格系统。Bootstrap框架中的网格系统就是这样实现的。
-SCSS 实现 // 混入 @import &amp;#34;../../../scss/mixins&amp;#34;; .lazy-row { // 清除浮动 @include clearfix(); display: block; } // 栅格总列数，即将容器宽度平分为12份 $grid-cols: 12; // 百分比计算函数 @function compute-percent($n) { @return $n / $grid-cols * 100%; } // 对应列数占据的宽度 @for $i from 1 through $grid-cols { .lazy-col-#{$i} { float: left; width: compute-percent($i); } } // 列偏移 @for $i from 1 through $grid-cols { .lazy-col-offset-#{$i} { margin-left: compute-percent($i); } } // 最大列间距20px $max-col-space: 20; // 列间距 @for $i from 1 through $max-col-space { .</description>
-    </item>
-    
-    <item>
-      <title>Table 数据表格</title>
-      <link>https://xxmd.github.io/lazy-ui/data/table/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/data/table/</guid>
-      <description>基础表格 点击字段排序有惊喜
-&amp;lt;div class=&amp;#34;lazy-table&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;template&amp;gt; new LazyUI.Table(&amp;#39;.lazy-table&amp;#39;, { url: &amp;#39;/getTableData&amp;#39;, cols: [ { field: &amp;#39;name&amp;#39;, title: &amp;#39;姓名&amp;#39; }, { field: &amp;#39;age&amp;#39;, title: &amp;#39;年龄&amp;#39;, sort: true, width: 80 }, { field: &amp;#39;sex&amp;#39;, title: &amp;#39;性别&amp;#39;, formatter: ({ val }) =&amp;gt; val === &amp;#39;male&amp;#39; ? &amp;#39;男&amp;#39; : &amp;#39;女&amp;#39; }, { field: &amp;#39;email&amp;#39;, title: &amp;#39;邮箱&amp;#39; }, { field: &amp;#39;job.jobName&amp;#39;, title: &amp;#39;职位名称&amp;#39; }, { field: &amp;#39;job.expectedSalary&amp;#39;, title: &amp;#39;期望薪资(元)&amp;#39;, align: &amp;#39;right&amp;#39;, sort: true }, { title: &amp;#39;操作&amp;#39;, formatter: () =&amp;gt; `&amp;lt;div class=&amp;#34;operate-btns&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;row-edit&amp;#34;&amp;gt;编辑&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;row-delete&amp;#34; onclick=&amp;#34;alert(&amp;#39;确认删除吗?</description>
-    </item>
-    
-    <item>
-      <title>Upload 文件上传</title>
-      <link>https://xxmd.github.io/lazy-ui/form/upload/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/form/upload/</guid>
-      <description>照片墙 上传多张图片，可对图片格式和数量进行限制。
-&amp;lt;div class=&amp;#34;lazy-upload&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;template&amp;gt; new LazyUI.Upload(&amp;#39;.lazy-upload&amp;#39;, { action: &amp;#39;https://back-end/api/upload&amp;#39;, limit: 3 }) &amp;lt;/template&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>安装</title>
-      <link>https://xxmd.github.io/lazy-ui/start/install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/start/install/</guid>
-      <description>npm 安装 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
-npm i lazy-ui -S CDN 目前可以通过 unpkg.com/lazy-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
-&amp;lt;!-- 引入样式 --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://unpkg.com/lazy-ui/dist/css/lazy-ui.min.css&amp;#34;&amp;gt; &amp;lt;!-- 引入组件库 --&amp;gt; &amp;lt;script src=&amp;#34;https://unpkg.com/lazy-ui/dist/js/lazy-ui.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; Hello world 通过 CDN 的方式我们可以很容易地使用 LazyUI 写出一个 Hello world 页面。在线演示
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;!-- import CSS --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://unpkg.com/lazy-ui/dist/css/lazy-ui.min.css&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;lazy-row&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;lazy-col-4 lazy-col-offset-4&amp;#34;&amp;gt;Hello World&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;!-- import JS --&amp;gt; &amp;lt;script src=&amp;#34;https://unpkg.com/lazy-ui/dist/js/lazy-ui.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/html&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>网站生成</title>
-      <link>https://xxmd.github.io/lazy-ui/start/docs-site-generate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xxmd.github.io/lazy-ui/start/docs-site-generate/</guid>
-      <description>Hugo Hugo 是由Go语言实现的静态网站生成器。
-网站生成步骤 使用 hugo new site site-name 命令生成一个网站。
-在 layouts 目录中定义网站布局 ( 例如 navbar，sidebar，content，footer 这种经典布局 ) 。
-在 content 目录中新建网站页面，文件格式为 .md ( markdown文件 )。
-使用 hugo serve 命令运行该网站
-项目目录结构如下
-site-name/ ├── archetypes/ │ └── default.md ├── assets/ ├── content/ // 网站页面 ├── data/ // 页面数据 ├── layouts/ // 网站布局 ├── public/ ├── static/ // 可通过url直接访问的静态资源 ├── themes/ // 网站主题 └── config.toml // Hugo 配置文件 </description>
-    </item>
-    
-  </channel>
-</rss>

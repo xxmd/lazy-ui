@@ -14,10 +14,13 @@
   ],
   "scripts": {
     "build": "npm-run-all --parallel build-*",
-    "build-css": "gulp",
-    "build-js": "webpack --watch",
+    "build-css": "gulp build",
+    "build-js": "webpack",
     "docs-gene": "hugo",
-    "docs-serve": "hugo server --port 9001"
+    "docs-serve": "hugo server --port 9001",
+    "watch": "npm-run-all --parallel watch-*",
+    "watch-css": "gulp",
+    "watch-js": "webpack --watch"
   },
   "keywords": [
     "LazyUI",

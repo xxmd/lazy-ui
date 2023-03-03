@@ -10,7 +10,7 @@ function cleanDist() {
 
 const cssDir = 'src/**/*.scss'
 
-function css() {
+function buildCSS() {
   return src(cssDir)
     .pipe(sass())
     .pipe(concatCSS('css/lazy-ui.min.css'))
@@ -18,8 +18,9 @@ function css() {
     .pipe(dest('dist'))
 }
 
-function _watch() {
+function watchCSS() {
   watch([cssDir], () => css())
 }
 
-exports.default = series(css, _watch)
+exports.build = buildCSS
+exports.default = series(buildCSS, watchCSS)
