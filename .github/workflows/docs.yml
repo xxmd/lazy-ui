@@ -15,8 +15,6 @@ jobs:
         with:
           node-version: '16'
 
-      - run: npm config set proxy false
-      - run: npm cache verify
       - run: npm config set registry https://registry.npm.taobao.org
       - run: npm install
       - run: npm run build
@@ -25,7 +23,7 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - run: hugo --minify
+      - run: hugo --cleanDestinationDir --noBuildLock --minify
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
