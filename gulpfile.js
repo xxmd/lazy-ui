@@ -19,7 +19,7 @@ function buildCSS() {
 }
 
 function watchCSS() {
-  watch([cssDir], () => css())
+  watch([cssDir], () => buildCSS())
 }
 
 exports.build = buildCSS
