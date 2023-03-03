@@ -2,10 +2,20 @@
 
 仿造Bootstrap实现的一个简单UI组件库
 
-## 快速开始
+## 安装
 
 - Clone the repo: `git clone https://github.com/xxmd/lazy-ui.git`
-- Install with [npm](https://www.npmjs.com/): `npm install @xxmd/lazy-ui`
+- Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
+
+## 用法
+```html
+<!-- 引入JS -->
+<script src="https://unpkg.com/lazy-ui-webpack/dist/js/lazy-ui.min.js"></script>
+<script>
+  console.log(window.LazyUI)
+  new LazyUI.Form('.form-container')
+</script>
+```
 
 ##目录说明
 

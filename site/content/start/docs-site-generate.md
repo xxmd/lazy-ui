@@ -13,15 +13,7 @@ toc: true
 [Hugo](https://gohugo.io/) 是由Go语言实现的静态网站生成器。
 
 ## 网站生成步骤
-1. 使用 `hugo new site site-name` 命令生成一个网站。
-
-2. 在 `layouts` 目录中定义网站布局 ( 例如 navbar，sidebar，content，footer 这种经典布局 ) 。
-
-3. 在 `content` 目录中新建网站页面，文件格式为 .md ( markdown文件 )。
-
-4. 使用 `hugo serve` 命令运行该网站
-
-5. 项目目录结构如下
+1. 使用 `hugo new site site-name` 命令生成一个网站，目录结构如下。
 
 ```text
 site-name/
@@ -36,3 +28,10 @@ site-name/
 ├── themes/     // 网站主题
 └── config.toml // Hugo 配置文件
 ```
+
+2. 在 `layouts` 目录中定义网站布局 ( 例如 navbar，sidebar，content，footer 这种经典布局 ) 。
+
+3. 在 `content` 目录中新建网站页面，文件格式为 .md ( markdown文件 )。
+
+4. 使用 `hugo serve` 命令运行该网站。
+

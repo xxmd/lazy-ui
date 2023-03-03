@@ -1,9 +1,17 @@
 {
   "name": "lazy-ui-webpack",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "仿造Bootstrap实现的一个简单UI组件库",
   "author": "xxmd",
   "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "gulpfile.js",
+    "package.json",
+    "README.md",
+    "webpack.config.js"
+  ],
   "scripts": {
     "build": "npm-run-all --parallel build-*",
     "build-css": "gulp",
@@ -21,7 +29,6 @@
     "chance": "^1.1.10"
   },
   "dependencies": {
-    "sass": "^1.32.12",
     "art-template-loader": "^1.4.3",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
@@ -31,6 +38,7 @@
     "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
+    "sass": "^1.32.12",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
