@@ -10,5 +10,5 @@
 </div>
 
 {{- highlight (trim .Inner "\n") "js" -}}
-<script src="/dist/js/lazy-ui.min.js"></script>
+<script src="{{ $.Site.BaseURL }}/dist/js/lazy-ui.min.js"></script>
 <script>{{ safeJS $js }}</script>
