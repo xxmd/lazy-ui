@@ -4,7 +4,6 @@
 
 ## 安装
 
-- Clone the repo: `git clone https://github.com/xxmd/lazy-ui.git`
 - Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
 
 ## 用法

@@ -3,10 +3,10 @@
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
-        <a class="nav-link{{ if .IsHome }} active{{ end }}" href="{{ $.Site.BaseURL }}">首页</a>
+        <a class="nav-link{{ if .IsHome }} active{{ end }}" href="/">首页</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="{{ $.Site.BaseURL }}/start/install/">文档</a>
+        <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="/start/install/">文档</a>
       </li>
       <li class="nav-item">
         <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://github.com/xxmd/lazy-ui" target="_blank" aria-label="GitHub">
