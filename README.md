@@ -6,13 +6,41 @@
 
 - Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
 
-## 用法
+## webpack中使用LazyUI
+```javascript
+import { Form } from "lazy-ui-webpack";
+
+// 初始化表单
+const element = ".form-container"
+const options = {} // 表单配置
+const form = new Form(element, options)
+
+// 处理表单提交
+form.onSubmit().then(res => {
+  console.log("formData: " + res)
+}).catch(error => {
+  console.log("form validate fail: " + error)
+})
+```
+
+## 页面引入资源
 ```html
+<!-- 引入CSS -->
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/lazy-ui-webpack/dist/css/lazy-ui.min.css">
+</head>
 <!-- 引入JS -->
 <script src="https://unpkg.com/lazy-ui-webpack/dist/js/lazy-ui.min.js"></script>
 <script>
   console.log(window.LazyUI)
-  new LazyUI.Form('.form-container')
+  // 初始化表单
+  const form = new LazyUI.Form('.form-container', {})
+  // 处理表单提交
+  form.onSubmit().then(res => {
+    console.log("formData: " + res)
+  }).catch(error => {
+    console.log("form validate fail: " + error)
+  })
 </script>
 ```
 
