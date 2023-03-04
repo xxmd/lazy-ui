@@ -41,17 +41,6 @@ class Table extends BaseComponent{
     })
   }
 
-  /**
-   * 分页回调
-   * @param curPage 当前页码
-   * @param pageSize 每页数据量
-   */
-  async pagingCb(curPage, pageSize) {
-    await this.init()
-    this.switchActive(null)
-    this.reRenderTbody(this.rows)
-  }
-
   resetThead() {
     this.checkAllInput.checked = false
     this.activeArrow?.classList.remove('active-arrow')
@@ -80,9 +69,8 @@ class Table extends BaseComponent{
     const changedIds = this.nextRowOrder.map(item => item.id)
     flip(srcId, changedIds, () => {
       this.tbody.innerHTML = tbodyTpl({
-        deepGet: deepGet,
-        rows: this.nextRowOrder,
-        options: this.options
+        ...this,
+        rows: this.nextRowOrder
       })
     })
     this.preRowOrder = this.nextRowOrder

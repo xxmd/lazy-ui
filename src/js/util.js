@@ -119,6 +119,36 @@ export function deepGet(obj, field) {
 }
 
 /**
+ * 深度克隆
+ * @param obj 需要克隆的对象
+ */
+export function deepClone(obj) {
+  if (typeof obj !== 'object') {
+    return
+  }
+  const tempObj = Array.isArray(obj) ? [] : {}
+  // 普通属性处理
+  for (let key of Object.keys(obj)) {
+    if (typeof obj[key] === 'object') {
+      tempObj[key] = deepClone(obj[key])
+    } else {
+      tempObj[key] = obj[key]
+    }
+  }
+
+  // symbol属性处理
+  for (let symbolKey of Object.getOwnPropertySymbols(obj)) {
+    if (typeof obj[symbolKey] === 'object') {
+      tempObj[symbolKey] = deepClone(obj[symbolKey])
+    } else {
+      tempObj[symbolKey] = obj[symbolKey]
+    }
+  }
+
+  return tempObj;
+}
+
+/**
  * 数组根据某个字段进行排序
  * @param srcArr 原数组
  * @param field 字段
@@ -127,7 +157,7 @@ export function deepGet(obj, field) {
  * @returns {*}
  */
 export function orderBy(srcArr, field, order) {
-  const arr = Array.from(srcArr)
+  const arr = deepClone(srcArr)
   arr.sort((a, b) => {
     return deepGet(a, field) - deepGet(b, field)
   })
