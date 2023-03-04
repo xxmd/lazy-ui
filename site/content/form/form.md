@@ -13,7 +13,7 @@ toc: true
 包括各种表单项，比如输入框、选择器、开关、单选框、多选框等。
 
 {{< example >}}
-  <form style="width: 40%" class="lazy-form">
+  <form style="width: fit-content" class="lazy-form">
     <div class="form-item">
       <label>活动名称</label>
       <input autocomplete="off" data-required="true" data-tips="请输入活动名称" name="name" type="text" placeholder="请输入活动名称">
