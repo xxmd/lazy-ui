@@ -9,14 +9,14 @@ class Input extends FormComponent {
     this.bindEvent()
   }
 
-  onChange() {
-    this.element.onchange = ({ target }) => {
+  onInput() {
+    this.element.oninput = ({ target }) => {
       this.validate(target.value.trim())
     }
   }
 
   bindEvent() {
-    this.onChange()
+    this.onInput()
   }
 
   render() {

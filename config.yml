@@ -4,6 +4,8 @@ publishDir: "docs"
 
 markup:
   goldmark:
+    renderer:
+      unsafe:           true
   # 允许外部 CSS 修饰 highlight 高亮
   highlight:
     noClasses: false

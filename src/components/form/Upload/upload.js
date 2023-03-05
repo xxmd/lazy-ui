@@ -11,7 +11,7 @@ class Upload extends FormComponent {
 
   checkLimit() {
     if (this.fileList.length >= Number(this.options.limit)) {
-      alert('limit')
+      alert(`图片数量超过限制，最多上传  ${ this.options.limit } 张` )
       return false
     }
     return true
@@ -27,7 +27,7 @@ class Upload extends FormComponent {
       file.url = url
       this.fileList.push(file)
       const fileDom = `<div class="file-item">
-                          <img src="${ url }">
+                          <img style="object-fit: fill" src="${ url }">
                           <label>
                             <i class="iconfont icon-check-mark"></i>
                           </label>
@@ -87,7 +87,7 @@ class Upload extends FormComponent {
       dialogTitle: file.name,
       dialogBody: `
         <div style="text-align: center">
-          <img src="${ file.url }"></img>
+          <img style="max-width: 100%; object-fit: contain" src="${ file.url }"></img>
         </div>
       `
     })

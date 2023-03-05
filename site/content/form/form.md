@@ -45,7 +45,7 @@ toc: true
   
     <div class="form-item">
       <label>特殊资源</label>
-      <div class="radio-group" data-name="nature" data-required="true" data-tips="请选择特殊资源">
+      <div class="radio-group" data-name="resource" data-required="true" data-tips="请选择特殊资源">
         <input value="brand" data-label="品牌商赞助">
         <input value="free" data-label="场地免费">
       </div>
