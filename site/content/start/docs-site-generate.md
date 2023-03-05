@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 网站生成
-description: 使用Hugo生成文档网站
+description: 使用 Hugo 生成文档网站
 group: start
 aliases:
   - "/start/docs-site-generate"

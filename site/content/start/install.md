@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 安装
-description: 快速引入LazyUI
+description: 快速引入 LazyUI
 group: start
 aliases:
   - "/start/install"
