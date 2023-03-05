@@ -2,11 +2,27 @@
 
 仿造Bootstrap实现的一个简单UI组件库
 
+## 在线预览
+
+[GitHub Pages](https://xxmd.github.io/lazy-ui/)
+
 ## 安装
 
 - Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
 
 ## webpack中使用LazyUI
+
+* npm 下载
+```shell
+Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
+```
+
+* 在 index.js 入口文件中引入CSS文件
+```javascript
+import 'lazy-ui-webpack/dist/css/lazy-ui.min.css';
+```
+  
+* 页面中使用
 ```javascript
 import { Form } from "lazy-ui-webpack";
 
@@ -23,7 +39,7 @@ form.onSubmit().then(res => {
 })
 ```
 
-## 页面引入资源
+## html引入资源
 ```html
 <!-- 引入CSS -->
 <head>
