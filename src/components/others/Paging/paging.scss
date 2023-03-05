@@ -6,10 +6,12 @@ $paging-height: 30px;
   display: flex;
   gap: 10px;
   .paging-indicator {
+    padding-left: 0;
     display: flex;
     gap: 10px;
     margin-bottom: 0;
     .indicator-item {
+      list-style: none;
       cursor: pointer;
       user-select: none;
       width: $paging-height;
