@@ -6,15 +6,11 @@
 
 [GitHub Pages](https://xxmd.github.io/lazy-ui/)
 
-## 安装
-
-- Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
-
 ## webpack中使用LazyUI
 
 * npm 下载
 ```shell
-Install with [npm](https://www.npmjs.com/): `npm install lazy-ui-webpack`
+npm install lazy-ui-webpack
 ```
 
 * 在 index.js 入口文件中引入CSS文件
