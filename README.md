@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-组件文档使用 [Hugo](https://gohugo.io/) 生成，目前已托管至 [GitHub Pages](https://xxmd.github.io/lazy-ui/)
+组件文档使用 [Hugo](https://gohugo.io/) 生成，目前已托管至 GitHub Pages [在线预览](https://xxmd.github.io/lazy-ui/)
 
 ## webpack中使用LazyUI
 
