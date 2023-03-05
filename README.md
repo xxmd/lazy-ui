@@ -1,10 +1,10 @@
 ## LazyUI
 
-仿造Bootstrap实现的一个简单UI组件库
+仿造 [Bootstrap](https://v4.bootcss.com/) 实现的一个简单UI组件库
 
 ## 在线预览
 
-[GitHub Pages](https://xxmd.github.io/lazy-ui/)
+组件文档使用 [Hugo](https://gohugo.io/) 生成，目前已托管至 [GitHub Pages](https://xxmd.github.io/lazy-ui/)
 
 ## webpack中使用LazyUI
 
@@ -13,7 +13,7 @@
 npm install lazy-ui-webpack
 ```
 
-* 在 index.js 入口文件中引入CSS文件
+* 在 index.js 入口文件中引入CSS
 ```javascript
 import 'lazy-ui-webpack/dist/css/lazy-ui.min.css';
 ```
@@ -35,7 +35,7 @@ form.onSubmit().then(res => {
 })
 ```
 
-## html引入资源
+## html 引入资源
 ```html
 <!-- 引入CSS -->
 <head>
@@ -56,7 +56,7 @@ form.onSubmit().then(res => {
 </script>
 ```
 
-##目录说明
+## 目录说明
 
 ```text
 lazy-ui/
